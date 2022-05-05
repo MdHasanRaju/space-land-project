@@ -1,0 +1,66 @@
+
+[
+	{
+		"id": "1",
+		"name": "Gary Goodspeed",
+		"origin": "Outer space",
+		"img": "https://finalspaceapi.com/api/character/avatar/gary_goodspeed.png",
+		"desc": "Located in the middle of Dhaka, this hospital serves patients with number of foreign institutes which work efficiently. It is spread across 18 stories with around 320 beds."
+	},
+	{
+		"id": "2",
+		"name": "Mooncake",
+		"status": "Unknown",
+		"origin": "Earth",
+		"img": "https://finalspaceapi.com/api/character/avatar/mooncake.jpg",
+		"desc": "This hospital is a part of the famous global firm which runs Apollo hospitals in many countries. It is located in Dhaka and accredited by the world class JCI. It has the capacity to have 450 beds and provides medical services in many domains."
+	},
+	{
+		"id": "3",
+		"name": "Quinn Ergon",
+		"origin": "Outer space",
+		"status": "Alive",
+		"img": "https://finalspaceapi.com/api/character/avatar/quinn_ergon.jpg",
+		"desc": "One of the very famous hospitals run by the Labaid Group, this has created a revolution in cardiac treatment in Bangladesh. It is located in Dhaka with specialized facilities to treat various kinds of ailments."
+	},
+	{
+		"id": "4",
+		"name":"Little Cato",
+		"status":"Alive",
+		"origin":"Ventrexia",
+		"img": "https://finalspaceapi.com/api/character/avatar/little_cato.jpg",
+		"desc": "This hospital was established in the year 1983, in a small mode. Since then, it has grown to the current position providing medical services in many areas, using top class facilities.Specialty of this hospital is its service attitude which is well respected in Bangladesh as well as the neighboring countries."
+	},
+	{
+		"id": "5",
+		"name":"Avocato",
+		"status":"Alive",
+		"origin":"Ventrexia",
+		"img": "https://finalspaceapi.com/api/character/avatar/avocato.jpg",
+		"desc": "This is a hospital attached to the “Popular Medical College” in Dhaka. It has a dedicated treatment center as well as a world class lab.As the name suggests, this is a hospital for the masses and is able to handle the quantity with quality care. It focuses on both illness care as well as the wellness aspects, so that the recurring problems are avoided and the patients go away with a healthy"
+	},
+	{
+		"id": "6",
+		"name":"KVN",
+		"status":"Operational",
+		"origin":"Some Factory",
+		"img": "https://finalspaceapi.com/api/character/avatar/kvn.jpg",
+		"desc": "Bangladesh Institute of Research and Rehabilitation in Diabetes, Endocrine and Metabolic Disorders, shortly Birdem is located in the city of Dhaka."
+	},
+	{
+		"id": "7",
+		"name":"Ash Graven",
+		"status":"Unknown",
+		"origin":"Serepentis",
+		"img": "https://finalspaceapi.com/api/character/avatar/ash_graven.png",
+		"desc": "Bangabandhu Sheikh Mujib Medical University, shorting BSMMU has this attached hospital which is located in Dhaka. This 10 storied building provides a casualty department."
+	},
+	{
+		"id": "8",
+		"name":"Fox",
+		"status":"Deceased",
+		"origin":"Tryvuulia",
+		"img": "https://finalspaceapi.com/api/character/avatar/fox.jpg",
+		"desc": "Established in 2005, this hospital focuses on eye care. It has a 10 storied building with many operation theaters and treatment, providing effective solutions to have the potential to disturb regular activities of people of any age."
+	}
+]
