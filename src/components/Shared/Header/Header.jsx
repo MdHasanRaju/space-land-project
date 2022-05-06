@@ -7,7 +7,7 @@ import logo from './../../../assets/images/background.png'
 const Header = () => {
   return (
     <div>
-      <Navbar  className="nav-color" collapseOnSelect expand="lg" bg="warning">
+      <Navbar  className="nav-color" collapseOnSelect expand="lg">
         <Container>
           <Navbar.Brand className="link-color" as={Link} to="/"><img height='40px' width='125px' src={logo} alt="space-land" /></Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

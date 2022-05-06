@@ -1,5 +1,6 @@
 .nav-color{
-    background: rgb(12, 218, 5)!important;
+    background: #a223f6;
+    /* background: linear-gradient(to right, #da22ff, #9733ee); */
 }
 .link-color{
     color: white!important;

@@ -1,9 +1,10 @@
 import React from 'react';
 import LottieBanner from '../../Shared/LottieAnimation/LottieBanner';
+import './Banner.css';
 
 const Banner = () => {
     return (
-        <div className='bg-primary m'>
+        <div className='banner-color m'>
            <div className="row g-2">
                <div className="col-lg-6 px-5 mt-4 d-flex text-start align-items-center">
                    <div>
@@ -15,7 +16,7 @@ const Banner = () => {
                        </button>
                    </div>
                </div>
-               <div className="col-lg-6 mt-2 border border-dark">
+               <div className="col-lg-6 mt-2">
                    <div>
                    <LottieBanner/>
                    </div>
