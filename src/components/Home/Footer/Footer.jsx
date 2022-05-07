@@ -12,13 +12,12 @@ import { faHome, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
-    <div className="bg-dark">
-      <div class="container">
-        <footer class="text-white text-center text-lg-start bg-dark">
-          <div class="container p-4">
-            <div class="row mt-4">
-              <div class="col-lg-4 col-sm-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">SpaceLand</h5>
+    <div className="bg-dark p-2">
+        <footer className="text-white text-center text-lg-start bg-dark">
+          <div className="container">
+            <div className="row mt-4">
+              <div className="col-lg-4 col-sm-6 mb-4 mb-md-0 px-2">
+                <h5 className="text-uppercase mb-4">SpaceLand</h5>
                 <p>
                   At vero eos et accusamus et iusto odio dignissimos ducimus qui
                   blanditiis praesentium voluptatum deleniti atque corrupti.
@@ -28,64 +27,76 @@ const Footer = () => {
                   dolores et quas molestias.
                 </p>
 
-                <div class="mt-4">
-                  <a type="button" class="btn btn-floating btn-light btn-lg me-2">
+                <div className="mt-4">
+                  <a
+                    type="button"
+                    className="btn btn-floating btn-light btn-lg me-2"
+                  >
                     <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                   </a>
 
-                  <a type="button" class="btn btn-floating btn-light btn-lg me-2">
+                  <a
+                    type="button"
+                    className="btn btn-floating btn-light btn-lg me-2"
+                  >
                     <FontAwesomeIcon icon={faDribbble}></FontAwesomeIcon>
                   </a>
-                  <a type="button" class="btn btn-floating btn-light btn-lg me-2">
+                  <a
+                    type="button"
+                    className="btn btn-floating btn-light btn-lg me-2"
+                  >
                     <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
                   </a>
-                  <a type="button" class="btn btn-floating btn-light btn-lg me-2">
+                  <a
+                    type="button"
+                    className="btn btn-floating btn-light btn-lg me-2"
+                  >
                     <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                   </a>
                 </div>
               </div>
 
-              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+              <div className="col-lg-4 col-md-6 mb-4 mb-md-0 px-2">
+                <h5 className="text-uppercase mb-4 pb-1">Search something</h5>
 
-                <div class="form-outline form-white mb-4">
+                <div className="form-outline form-white mb-4">
                   <input
                     type="text"
                     id="formControlLg"
-                    class="form-control form-control-lg"
+                    className="form-control form-control-lg"
                   />
-                  <label class="form-label" for="formControlLg">
+                  <label className="form-label" htmlFor="formControlLg">
                     Search
                   </label>
                 </div>
 
-                <ul class="fa-ul" style={{ marginLeft: "1.65em" }}>
-                  <li class="mb-3">
-                    <span class="fa-li">
+                <ul className="fa-ul " style={{ marginLeft: "1.65em" }}>
+                  <li className="mb-3">
+                    <span className="fa-li">
                       <FontAwesomeIcon icon={faHome}></FontAwesomeIcon>
                     </span>
-                    <span class="ms-2">Dhaka, 1361, Bangladesh</span>
+                    <span className="ms-2">Dhaka, 1361, Bangladesh</span>
                   </li>
-                  <li class="mb-3">
-                    <span class="fa-li">
+                  <li className="mb-3">
+                    <span className="fa-li">
                       <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
                     </span>
-                    <span class="ms-2">mdhasanraju2017@gmail.com</span>
+                    <span className="ms-2">mdhasanraju2017@gmail.com</span>
                   </li>
-                  <li class="mb-3">
-                    <span class="fa-li">
+                  <li className="mb-3">
+                    <span className="fa-li">
                       <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
                     </span>
-                    <span class="ms-2">+ 48 234 567 88</span>
+                    <span className="ms-2">+ 48 234 567 88</span>
                   </li>
                 </ul>
               </div>
 
-              <div class="col-lg-4 col-sm-12 mb-4 mb-md-0">
-                <h5 class="text-uppercase mb-4">inquiry hours</h5>
+              <div className="col-lg-4 col-sm-12 mb-4 mb-md-0">
+                <h5 className="text-uppercase mb-4">inquiry hours</h5>
 
-                <table class="table text-center text-white">
-                  <tbody class="fw-normal">
+                <table className="table text-center text-white">
+                  <tbody className="fw-normal">
                     <tr>
                       <td>Mon - Thu:</td>
                       <td>8am - 9pm</td>
@@ -104,16 +115,14 @@ const Footer = () => {
             </div>
           </div>
 
-          <div
-            class="text-center p-3"
-          >
-            © 2022 Copyright: 
-            <a class="text-white" href="https://mdbootstrap.com/">
-            spaceland.com
+          <div className="text-center p-3">
+            © 2022 Copyright:
+            <a className="text-white" href="https://mdbootstrap.com/">
+              spaceland.com
             </a>
           </div>
         </footer>
-      </div>
+      
     </div>
   );
 };

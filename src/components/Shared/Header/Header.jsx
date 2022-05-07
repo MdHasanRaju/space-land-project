@@ -20,7 +20,7 @@ const Header = () => {
             
             </Nav>
             <Nav >
-              <Nav.Link className="link-color" as={Link} to="/more">More</Nav.Link>
+              <Nav.Link className="link-color" as={Link} to="/login">Login</Nav.Link>
               <Nav.Link className="link-color" as={Link} eventKey={2} to="/register">
                 Register
               </Nav.Link>

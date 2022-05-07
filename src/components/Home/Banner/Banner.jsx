@@ -5,8 +5,9 @@ import './Banner.css';
 const Banner = () => {
     return (
         <div className='banner-color m'>
-           <div className="row g-2">
-               <div className="col-lg-6 px-5 mt-4 d-flex text-start align-items-center">
+            <div className="container">
+           <div className="row">
+               <div className="col-lg-6 px-2 mt-4 d-flex text-start align-items-center">
                    <div>
                        <h1>Let's go to Mars and</h1>
                        <h1> dominate the land of Mars</h1>
@@ -21,6 +22,7 @@ const Banner = () => {
                    <LottieBanner/>
                    </div>
                </div>
+           </div>
            </div>
         </div>
     );
