@@ -12,13 +12,6 @@ const firebaseConfig = {
   storageBucket:process.env.REACT_APP_storageBucket,
   messagingSenderId:process.env.REACT_APP_messagingSenderId,
   appId:process.env.REACT_APP_appId,
-
-  // apiKey: "AIzaSyA4C4tOhNXUwIYzj9VhV18OeX_0KeXh9oM",
-  // authDomain: "final-space-website.firebaseapp.com",
-  // projectId: "final-space-website",
-  // storageBucket: "final-space-website.appspot.com",
-  // messagingSenderId: "116486140265",
-  // appId: "1:116486140265:web:6d3f2020840d7ffa75cdf8"
 };
 
 // Initialize Firebase
