@@ -11,21 +11,29 @@ import Register from "./components/Authentication/Register/Register";
 import SlicedCharacters from "./components/Home/SlicedCharacters/SlicedCharacters";
 import CharacterDetails from "./components/Home/CharacterDetails/CharacterDetails";
 import NotFound from "./components/NotFound/NotFound";
+import RequireAuth from "./components/Authentication/RequireAuth/RequireAuth";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} ></Route>
-        <Route path="/home" element={<Home />} ></Route>
-        <Route path="/characters" element={<Characters />} ></Route>
-        <Route path="/character/:characterId" element={<CharacterDetails />} ></Route>
-        <Route path="/about" element={<About />} ></Route>
-        <Route path="/contact" element={<Contact />} ></Route>
-        <Route path="/login" element={<Login />} ></Route>
-        <Route path="/register" element={<Register />} ></Route>
-        <Route path="*" element={<NotFound/>} ></Route>
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/characters" element={<Characters />}></Route>
+        <Route
+          path="/character/:characterId"
+          element={
+            <RequireAuth>
+              <CharacterDetails />
+            </RequireAuth>
+          }
+        ></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="*" element={<NotFound />}></Route>
       </Routes>
     </div>
   );
