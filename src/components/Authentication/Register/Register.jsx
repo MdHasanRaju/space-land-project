@@ -31,7 +31,8 @@ const Register = () => {
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
     console.log(name, email, password, 'profile updated');
-    navigate('/');
+    // navigate('/');
+    navigate(from, { replace: true });
   };
 
   let errorElement;

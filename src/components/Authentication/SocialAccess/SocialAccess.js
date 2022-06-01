@@ -2,13 +2,15 @@ import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { useSignInWithGoogle } from "react-firebase-hooks/auth";
-import { Navigate, useNavigate } from "react-router-dom";
+import { Navigate, useLocation, useNavigate } from "react-router-dom";
 import Loading from "../../Shared/Loading/Loading";
 import auth from "../Firebase/Firebase.init";
 
 const SocialAccess = () => {
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const navigate = useNavigate();
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
 
   let errorElement;
   if (error) {
@@ -20,7 +22,7 @@ const SocialAccess = () => {
   }
 
   if (user) {
-    return navigate("/");
+    return navigate(from, { replace: true });
   }
 
   const handleGoogleSignIn = () => {
