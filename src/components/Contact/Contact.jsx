@@ -2,7 +2,7 @@ import React from "react";
 import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faMapMarker, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faArrowCircleRight, faMapMarker, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Contact = () => {
   return (
@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="col-sm-12 text-center mb-4">
           <a className="btn btn-primary" target="_blank" href="#">
             {" "}
-            Visit Us <i className="fa fa-dollar"></i>
+            Visit Us <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon>
           </a>
         </div>
         <div className="col-sm-12 mb-4 col-md-5">
