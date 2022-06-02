@@ -29,7 +29,6 @@ const Login = () => {
     e.preventDefault();
     const email = emailRef.current.value;
     const password = passwordRef.current.value;
-    console.log(email, password);
     signInWithEmailAndPassword(email, password);
   };
 
@@ -46,6 +45,7 @@ const Login = () => {
   if (user) {
     navigate(from, { replace: true });
   }
+
   let errorElement;
   if (error) {
     errorElement = (
@@ -114,7 +114,7 @@ const Login = () => {
                   />
                   <p className="text-start my-2 d-flex align-items-center">
                       Forget Password?{" "}
-                      <button onClick={resetPassword} className="btn btn-link  text-primary text-decoration-none">
+                      <button onClick={resetPassword} className="btn btn-link text-primary text-decoration-none">
                         Reset Password
                       </button>
                     </p>

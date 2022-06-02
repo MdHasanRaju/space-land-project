@@ -39,6 +39,7 @@ const Register = () => {
   if (emailError) {
     errorElement = <p className="text-danger">Error: {emailError.message}</p>;
   }
+  
   // let loadingElement;
   if (emailLoading || updating) {
     return <Loading/>
