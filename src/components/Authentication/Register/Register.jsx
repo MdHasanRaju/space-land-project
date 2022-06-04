@@ -118,7 +118,7 @@ const Register = () => {
                   />
                   {errorElement && errorElement}
                   {/* {loadingElement && loadingElement} */}
-                  <p className="mb-3 mt-2 text-start ">
+                  <p className="mb-2 mt-2 text-start ">
                     Already have an account?
                     <Link
                       to="/login"

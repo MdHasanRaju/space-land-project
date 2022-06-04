@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import './SlicedCharacters.css';
 
 const SlicedCharacters = () => {
   const [items, setItems] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch("./finalspaceapi.json")
@@ -25,20 +27,32 @@ const SlicedCharacters = () => {
         <div className="row">
           {items?.map((item, index) => (
             <div key={index} className="col-lg-4 col-md-6 col-sm-6 px-2">
-              <div className="single-blogs mb-3">
+              <div style={{border:'1px solid #7c48dc'}} className="single-blogs mb-3 pb-2">
                 <div className="blog-img">
-                  <img className=" rounded-2" width="100%" src={item.img} alt="character-image" />
+                  <img
+                    className=" rounded-2"
+                    style={{maxHeight:'280px', width:'100%'}}
+                    src={item.img}
+                    alt="character-image"
+                  />
                 </div>
-                <div className="blogs-cap text-start">
+                <div className="blogs-cap text-start px-2">
                   <span>{item.name}</span>
                   <h5>{item.origin}</h5>
                   <p>
                     Consectetur adipisicing elit. Laborum fuga incidunt
                     laboriosam voluptas iure, delectus..
                   </p>
-                  <Link className="btn btn-primary " to={`/character/${item.id}`}>
-                  Read More
+
+                  <Link className="text-decoration-none" to={`/character/${item.id}`}>
+                    <button state={{background:'#7c48dc', color:'black' }} >See more</button>
                   </Link>
+                  {/* <button
+                    onClick={() => navigate(`/character/${item.id}`)}
+                    className="button"
+                  >
+                    <span>See More</span>
+                  </button> */}
                 </div>
               </div>
             </div>

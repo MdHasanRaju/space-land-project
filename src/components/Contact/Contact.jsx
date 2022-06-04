@@ -2,22 +2,36 @@ import React from "react";
 import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faArrowCircleRight, faMapMarker, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowCircleRight,
+  faMapMarker,
+  faPhone,
+} from "@fortawesome/free-solid-svg-icons";
+import './Contact.css';
 
 const Contact = () => {
+  const bgStyle = {
+    backgroundColor: "#da22ff",
+  };
+
+  const textStyle = {
+    color: "#9733ee",
+  };
+
   return (
     <section className="container mt-5">
       <div className="row">
         <div className="col-sm-12 text-center mb-4">
-          <a className="btn btn-primary" target="_blank" href="#">
-            {" "}
-            Visit Us <FontAwesomeIcon icon={faArrowCircleRight}></FontAwesomeIcon>
-          </a>
+          <button className="button" >
+            <span>
+              Visit Us
+            </span>
+          </button>
         </div>
         <div className="col-sm-12 mb-4 col-md-5">
-          <div className="card border-primary rounded-0">
-            <div className="card-header p-0">
-              <div className="bg-primary text-white text-center py-2">
+          <div style={{border:'1.5px solid #a223f6',}}  className="card ">
+            <div className="card-header p-0 m-0">
+              <div style={{backgroundColor:'#a223f6'}} className=" text-white text-center py-2">
                 <h3>
                   <i className="fa fa-envelope"></i> Write to us:
                 </h3>
@@ -31,7 +45,6 @@ const Contact = () => {
                 <label> Your name </label>
                 <div className="input-group">
                   <input
-                    value=""
                     type="text"
                     name="data[name]"
                     className="form-control"
@@ -45,7 +58,6 @@ const Contact = () => {
                 <div className="input-group mb-2 mb-sm-0">
                   <input
                     type="email"
-                    value=""
                     name="data[email]"
                     className="form-control"
                     id="inlineFormInputGroupUsername"
@@ -76,8 +88,8 @@ const Contact = () => {
                   type="submit"
                   name="submit"
                   value="submit"
-
-                  className="btn btn-primary btn-block w-100 rounded-0 py-2"
+                  style={{backgroundColor:'#a223f6'}}
+                  className="btn text-light btn-block w-100 rounded-0 py-2"
                 />
               </div>
             </div>
@@ -86,12 +98,12 @@ const Contact = () => {
 
         <div className="col-sm-12 col-md-7">
           <div className="mb-4">
-          <iframe
+            <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.869507132886!2d90.48928244973479!3d23.716353595919365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b655bf06207f%3A0x1f95e2008863e33d!2sHazi%20Moazzem%20Ali%20High%20School!5e0!3m2!1sen!2sbd!4v1654141184316!5m2!1sen!2sbd"
               width="100%"
               height="450"
               frameBorder="0"
-              style={{border:0}}
+              style={{ border: 0 }}
               loading="lazy"
               aria-hidden="false"
               tabIndex="0"
@@ -99,21 +111,32 @@ const Contact = () => {
           </div>
           <div className="row text-center">
             <div className="col-md-4">
-              <a href="#" className="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block">
+              <a
+                href="#"
+                style={bgStyle}
+                className="px-3 py-2 rounded text-white mb-2 d-inline-block"
+              >
                 <FontAwesomeIcon icon={faMapMarker}></FontAwesomeIcon>
               </a>
               <p> Demra ,Dhaka </p>
             </div>
             <div className="col-md-4">
-              <a href="#" className="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block">
+              <a
+                href="#"
+                style={bgStyle}
+                className="px-3 py-2 rounded text-white mb-2 d-inline-block"
+              >
                 <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
               </a>
               <p>+880- 1517140853</p>
             </div>
             <div className="col-md-4">
-              <a href="#" className="bg-primary px-3 py-2 rounded text-white mb-2 d-inline-block">
-                
-                <FontAwesomeIcon  icon={faEnvelope}></FontAwesomeIcon>
+              <a
+                href="#"
+                style={bgStyle}
+                className="px-3 py-2 rounded text-white mb-2 d-inline-block"
+              >
+                <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
               </a>
               <p> mdhasanraju2017@gmail.com</p>
             </div>

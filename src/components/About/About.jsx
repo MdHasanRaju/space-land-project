@@ -1,15 +1,21 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./About.css";
-import { faAnchor, faCamera, faDatabase, faGlobe, faUpload } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAnchor,
+  faCamera,
+  faDatabase,
+  faGlobe,
+  faUpload,
+} from "@fortawesome/free-solid-svg-icons";
 import { faHourglassHalf } from "@fortawesome/free-regular-svg-icons";
 
 const About = () => {
   return (
-    <div class="feat bg-gray pt-5 pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="section-head col-sm-12">
+    <div className="feat bg-gray pt-5 pb-5">
+      <div className="container">
+        <div className="row">
+          <div className="section-head col-sm-12">
             <h4>
               <span>Why Choose</span> Us?
             </h4>
@@ -20,10 +26,10 @@ const About = () => {
               online, SEO and social media.
             </p>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
+          <div className="col-lg-4 col-sm-6">
+            <div className="item">
               {" "}
-              <span class="icon feature_box_col_one">
+              <span className="icon feature_box_col_one">
                 <FontAwesomeIcon icon={faGlobe}></FontAwesomeIcon>
               </span>
               <h6>Modern Design</h6>
@@ -33,24 +39,23 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
+          <div className="col-lg-4 col-sm-6">
+            <div className="item">
               {" "}
-              <span class="icon feature_box_col_two">
-                {/* <i class="fa fa-anchor"></i> */}
+              <span className="icon feature_box_col_two">
                 <FontAwesomeIcon icon={faAnchor}></FontAwesomeIcon>
               </span>
               <h6>Creative Design</h6>
               <p>
-                We are always creative and and always listen our customers and we
-                mix these two things and make beast design.
+                We are always creative and and always listen our customers and
+                we mix these two things and make beast design.
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
+          <div className="col-lg-4 col-sm-6">
+            <div className="item">
               {" "}
-              <span class="icon feature_box_col_three">
+              <span className="icon feature_box_col_three">
                 <FontAwesomeIcon icon={faHourglassHalf}></FontAwesomeIcon>
               </span>
               <h6>24 x 7 User Support</h6>
@@ -60,10 +65,10 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
+          <div className="col-lg-4 col-sm-6">
+            <div className="item">
               {" "}
-              <span class="icon feature_box_col_four">
+              <span className="icon feature_box_col_four">
                 <FontAwesomeIcon icon={faDatabase}></FontAwesomeIcon>
               </span>
               <h6>Business Growth</h6>
@@ -73,10 +78,10 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
+          <div className="col-lg-4 col-sm-6">
+            <div className="item">
               {" "}
-              <span class="icon feature_box_col_five">
+              <span className="icon feature_box_col_five">
                 <FontAwesomeIcon icon={faUpload}></FontAwesomeIcon>
               </span>
               <h6>Market Strategy</h6>
@@ -87,10 +92,10 @@ const About = () => {
               </p>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="item">
+          <div className="col-lg-4 col-sm-6">
+            <div className="item">
               {" "}
-              <span class="icon feature_box_col_six">
+              <span className="icon feature_box_col_six">
                 <FontAwesomeIcon icon={faCamera}></FontAwesomeIcon>
               </span>
               <h6>Affordable cost</h6>

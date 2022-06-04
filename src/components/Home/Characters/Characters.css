@@ -15,8 +15,12 @@
     margin-bottom: 25px;
     width: 100%;
 }
-a, button {
-    color: rgb(160, 164, 215);
+button {
+    background-color: #7c48dc;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border: 10px;
     outline: medium none;
 }
 .home-blog .single-blogs .blogs-cap span {

@@ -11,9 +11,16 @@ import {
 import { faHome, faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
+  // #480048
+
+  const bgColor = {
+    // backgroundColor:'#7c48dc'
+    backgroundColor:'#6517f7'
+  }
+
   return (
-    <div className="bg-dark p-2">
-        <footer className="text-white text-center text-lg-start bg-dark">
+    <div style={bgColor} className="p-2">
+        <footer className="text-white text-center text-lg-start">
           <div className="container">
             <div className="row mt-4">
               <div className="col-lg-4 col-sm-6 mb-4 mb-md-0 px-2">
@@ -49,7 +56,8 @@ const Footer = () => {
                   </a>
                   <a
                     type="button"
-                    className="btn btn-floating btn-light btn-lg me-2"
+
+                    className="text-light p-2 rounded fs-2 me-2"
                   >
                     <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                   </a>

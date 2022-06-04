@@ -112,7 +112,7 @@ const Login = () => {
                     value="Log In"
                     className="btn text-white w-100 btn-primary"
                   />
-                  <p className="text-start my-2 d-flex align-items-center">
+                  <p className="text-start mt-2 mb-1 d-flex align-items-center">
                       Forget Password?{" "}
                       <button onClick={resetPassword} className="btn btn-link text-primary text-decoration-none">
                         Reset Password
@@ -120,7 +120,7 @@ const Login = () => {
                     </p>
                   {errorElement && errorElement}
                   {/* {loadingElement && loadingElement} */}
-                  <p className="mb-4  text-start ">
+                  <p className="mb-2  text-start ">
                     New to Spaceland?
                     <Link
                       to="/register"
