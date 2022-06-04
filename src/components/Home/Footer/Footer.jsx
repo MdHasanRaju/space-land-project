@@ -37,20 +37,20 @@ const Footer = () => {
                 <div className="mt-4">
                   <a
                     type="button"
-                    className="btn btn-floating btn-light btn-lg me-2"
+                    className="text-light p-2 rounded fs-2 me-2"
                   >
                     <FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon>
                   </a>
 
                   <a
                     type="button"
-                    className="btn btn-floating btn-light btn-lg me-2"
+                    className="text-light p-2 rounded fs-2 me-2"
                   >
                     <FontAwesomeIcon icon={faDribbble}></FontAwesomeIcon>
                   </a>
                   <a
                     type="button"
-                    className="btn btn-floating btn-light btn-lg me-2"
+                    className="text-light p-2 rounded fs-2 me-2"
                   >
                     <FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon>
                   </a>

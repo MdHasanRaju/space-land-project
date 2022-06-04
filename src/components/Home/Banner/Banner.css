@@ -1,7 +1,8 @@
 .banner-color{
-    background: #7c48dc;  /* fallback for old browsers */
+    background: #a223f6;  /* fallback for old browsers */
     /* background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  
     background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); 
      */
+     padding: 100px 0;
     color: white;
     }

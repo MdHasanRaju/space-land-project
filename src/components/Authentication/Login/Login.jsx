@@ -58,6 +58,15 @@ const Login = () => {
 
   }
 
+  const buttonStyle = {
+    width:"100%",
+    backgroundColor:'#a223f6',
+    border:'none',
+    padding:'5px 0',
+    borderRadius:'5px',
+    color:'white'
+  }
+
   return (
     <div className="py-5">
       <div className="container">
@@ -110,7 +119,7 @@ const Login = () => {
                   <input
                     type="submit"
                     value="Log In"
-                    className="btn text-white w-100 btn-primary"
+                    style={buttonStyle}
                   />
                   <p className="text-start mt-2 mb-1 d-flex align-items-center">
                       Forget Password?{" "}

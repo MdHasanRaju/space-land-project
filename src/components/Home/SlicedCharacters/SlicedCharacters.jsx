@@ -38,21 +38,21 @@ const SlicedCharacters = () => {
                 </div>
                 <div className="blogs-cap text-start px-2">
                   <span>{item.name}</span>
-                  <h5>{item.origin}</h5>
+                  <h5 className="my-2">{item.origin}</h5>
                   <p>
                     Consectetur adipisicing elit. Laborum fuga incidunt
                     laboriosam voluptas iure, delectus..
                   </p>
 
-                  <Link className="text-decoration-none" to={`/character/${item.id}`}>
-                    <button state={{background:'#7c48dc', color:'black' }} >See more</button>
-                  </Link>
-                  {/* <button
+                  {/* <Link className="text-decoration-none" to={`/character/${item.id}`}>
+                    <button className="button text-" ><span>See more</span></button>
+                  </Link> */}
+                  <button
                     onClick={() => navigate(`/character/${item.id}`)}
                     className="button"
                   >
                     <span>See More</span>
-                  </button> */}
+                  </button>
                 </div>
               </div>
             </div>

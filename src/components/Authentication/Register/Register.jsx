@@ -49,6 +49,16 @@ const Register = () => {
     console.log('user:', user)
   }
 
+  const buttonStyle = {
+    width:"100%",
+    backgroundColor:'#a223f6',
+    border:'none',
+    padding:'5px 0',
+    borderRadius:'5px',
+    color:'white'
+  }
+
+
   return (
     <div className="py-5">
       <div className="container">
@@ -114,7 +124,9 @@ const Register = () => {
                     disabled={!agree}
                     type="submit"
                     value="Register"
-                    className="btn text-white w-100 btn-primary"
+                    style={!agree ? {width:'100%', backgroundColor:'lightGray', padding:'5px 0',
+                    borderRadius:'5px',border:'none',
+                    color:'black'}: buttonStyle }
                   />
                   {errorElement && errorElement}
                   {/* {loadingElement && loadingElement} */}

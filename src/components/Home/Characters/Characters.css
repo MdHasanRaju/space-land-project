@@ -15,17 +15,18 @@
     margin-bottom: 25px;
     width: 100%;
 }
-button {
+/* button {
     background-color: #7c48dc;
     border: 1px solid white;
     color: white;
     padding: 5px 10px;
     border: 10px;
     outline: medium none;
-}
+} */
+
 .home-blog .single-blogs .blogs-cap span {
-    color: #74706B;
-    margin-bottom: 11px;
+    /* color: #74706B; */
+    margin-bottom: 0px;
     display: block;
 }
 .home-blog .single-blogs .blogs-cap link {

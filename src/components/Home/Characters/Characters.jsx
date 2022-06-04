@@ -17,7 +17,7 @@ const Characters = () => {
     <section className="home-blog">
       <div className="container">
         <div className="row justify-content-center">
-          <div className="cl-xl-7 col-lg-8 col-md-10 px-2">
+          <div className="col-xl-7 col-lg-8 col-md-10 px-2">
             <div className="section-tittle text-center mb-4">
               <h2><span style={{color:"#a223f6"}}>MORE </span> CHARACTERS</h2>
             </div>
@@ -36,15 +36,15 @@ const Characters = () => {
                 />
               </div>
               <div className="blogs-cap text-start px-2">
-                <span>{item.name}</span>
-                <h5>{item.origin}</h5>
+                <span >{item.name}</span>
+                <h5 className="my-2">{item.origin}</h5>
                 <p>
                   Consectetur adipisicing elit. Laborum fuga incidunt
                   laboriosam voluptas iure, delectus..
                 </p>
 
                 <Link className="text-decoration-none" to={`/character/${item.id}`}>
-                  <button state={{background:'#7c48dc', color:'black' }} >See more</button>
+                  <button className="button"><span>See more</span></button>
                 </Link>
                 {/* <button
                   onClick={() => navigate(`/character/${item.id}`)}

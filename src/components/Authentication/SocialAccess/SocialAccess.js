@@ -29,6 +29,16 @@ const SocialAccess = () => {
     signInWithGoogle();
   };
 
+  const buttonStyle = {
+    width: "100%",
+    backgroundColor:'#a223f6',
+    border:'none',
+    padding:'5px 0',
+    borderRadius:'5px',
+    color:'white'
+
+  }
+
   return (
     <div>
       <div className="d-flex align-items-center">
@@ -42,8 +52,7 @@ const SocialAccess = () => {
         <div className="social-login d-flex justify-content-between">
           <button
             onClick={handleGoogleSignIn}
-            style={{ width: "100%" }}
-            className="btn btn-primary text-light rounded  px-5"
+            style={buttonStyle}
           >
             {" "}
             Sign in with google

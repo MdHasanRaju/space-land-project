@@ -1,8 +1,19 @@
 .nav-color{
     background: #a223f6;
-    /* background: linear-gradient(to right, #da22ff, #9733ee); */
+    /* background: #7c48dc; */
 }
 .link-color{
     color: white!important;
+}
+
+.bg-color{
+    background-color: #7c48dc;
+}
+
+.title-color{
+    color: #7c48dc;
+}
+.test-color {
+    color: #7952c3;
 }
 
