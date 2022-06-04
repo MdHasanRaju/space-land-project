@@ -42,7 +42,7 @@ const Contact = () => {
             </div>
             <div className="card-body p-3">
               <div className="form-group text-start">
-                <label> Your name </label>
+                <label style={{color:"#7c48dc", fontWeight:'bold'}}> Your name </label>
                 <div className="input-group">
                   <input
                     type="text"
@@ -54,7 +54,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="form-group text-start my-1">
-                <label>Your email</label>
+                <label style={{color:"#7c48dc", fontWeight:'bold'}}>Your email</label>
                 <div className="input-group mb-2 mb-sm-0">
                   <input
                     type="email"
@@ -66,7 +66,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="form-group text-start">
-                <label>Subject</label>
+                <label style={{color:"#7c48dc", fontWeight:'bold'}}>Subject</label>
                 <div className="input-group mb-2 mb-sm-0">
                   <input
                     type="text"
@@ -78,7 +78,7 @@ const Contact = () => {
                 </div>
               </div>
               <div className="form-group mt-1 mb-4 text-start">
-                <label>Message</label>
+                <label style={{color:"#7c48dc", fontWeight:'bold'}}>Message</label>
                 <div className="input-group  mb-sm-0">
                   <input type="text" className="form-control" name="mesg" />
                 </div>
