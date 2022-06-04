@@ -20,7 +20,7 @@ const SlicedCharacters = () => {
         <div className="row justify-content-center">
           <div className="cl-xl-7 col-lg-8 col-md-10 px-2">
             <div className="section-tittle text-center mb-4">
-              <h2>More Characters</h2>
+              <h2 className="">SPACE <span style={{color:'#a223f6'}}> CHARACTERS</span></h2>
             </div>
           </div>
         </div>
