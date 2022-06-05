@@ -1,5 +1,10 @@
 .App {
   text-align: center;
   overflow-x: hidden;
+  
 }
 
+body {
+  font-family: "Tajawal", Arial;
+  /* font-family: "Tajawal", sans-serif; */
+}

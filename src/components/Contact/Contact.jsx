@@ -8,8 +8,10 @@ import {
   faPhone,
 } from "@fortawesome/free-solid-svg-icons";
 import './Contact.css';
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate()
   const bgStyle = {
     backgroundColor: "#da22ff",
   };
@@ -18,11 +20,13 @@ const Contact = () => {
     color: "#9733ee",
   };
 
+  
+  
   return (
     <section className="container mt-5">
       <div className="row">
         <div className="col-sm-12 text-center mb-4">
-          <button className="button" >
+          <button onClick={() => navigate('/about')} className="button" >
             <span>
               Visit Us
             </span>
@@ -80,7 +84,7 @@ const Contact = () => {
               <div className="form-group mt-1 mb-4 text-start">
                 <label style={{color:"#7c48dc", fontWeight:'bold'}}>Message</label>
                 <div className="input-group  mb-sm-0">
-                  <input type="text" className="form-control" name="mesg" />
+                  <input type="text" className="form-control" name="(mesg" />
                 </div>
               </div>
               <div className="text-center">
