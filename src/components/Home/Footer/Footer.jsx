@@ -19,7 +19,7 @@ const Footer = () => {
   }
 
   return (
-    <div style={bgColor} className="p-2">
+    <div style={bgColor} className="p-2 ">
         <footer className="text-white text-center text-lg-start">
           <div className="container">
             <div className="row mt-4">
@@ -125,7 +125,7 @@ const Footer = () => {
 
           <div className="text-center p-3">
             © 2022 Copyright:
-            <a className="text-white" href="https://mdbootstrap.com/">
+            <a className="text-white" href="#">
               spaceland.com
             </a>
           </div>

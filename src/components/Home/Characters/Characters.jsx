@@ -39,8 +39,7 @@ const Characters = () => {
                 <span >{item.name}</span>
                 <h5 className="my-2">{item.origin}</h5>
                 <p>
-                  Consectetur adipisicing elit. Laborum fuga incidunt
-                  laboriosam voluptas iure, delectus..
+                {item?.desc?.slice(0, 100)}...
                 </p>
 
                 <Link className="text-decoration-none" to={`/character/${item.id}`}>

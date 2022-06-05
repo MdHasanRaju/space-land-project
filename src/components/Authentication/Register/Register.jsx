@@ -85,8 +85,7 @@ const Register = () => {
                     <strong style={{ color: "#a223f6" }}> Spaceland</strong>
                   </h3>
                   <p className="mb-4">
-                    Lorem ipsum dolor sit amet elit. Sapiente sit aut eos
-                    consectetur adipisicing.
+                  Welcome to Space Land. Here you will be able to get a lot of information about alien.
                   </p>
                 </div>
                 <form onSubmit={handleSubmit} method="post">

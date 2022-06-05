@@ -1,66 +1,65 @@
-
 [
-	{
-		"id": "1",
-		"name": "Gary Goodspeed",
-		"origin": "Outer space",
-		"img": "https://finalspaceapi.com/api/character/avatar/gary_goodspeed.png",
-		"desc": "Located in the middle of Dhaka, this hospital serves patients with number of foreign institutes which work efficiently. It is spread across 18 stories with around 320 beds."
-	},
-	{
-		"id": "2",
-		"name": "Mooncake",
-		"status": "Unknown",
-		"origin": "Earth",
-		"img": "https://finalspaceapi.com/api/character/avatar/mooncake.jpg",
-		"desc": "This hospital is a part of the famous global firm which runs Apollo hospitals in many countries. It is located in Dhaka and accredited by the world class JCI. It has the capacity to have 450 beds and provides medical services in many domains."
-	},
-	{
-		"id": "3",
-		"name": "Quinn Ergon",
-		"origin": "Outer space",
-		"status": "Alive",
-		"img": "https://finalspaceapi.com/api/character/avatar/quinn_ergon.jpg",
-		"desc": "One of the very famous hospitals run by the Labaid Group, this has created a revolution in cardiac treatment in Bangladesh. It is located in Dhaka with specialized facilities to treat various kinds of ailments."
-	},
-	{
-		"id": "4",
-		"name":"Little Cato",
-		"status":"Alive",
-		"origin":"Ventrexia",
-		"img": "https://finalspaceapi.com/api/character/avatar/little_cato.jpg",
-		"desc": "This hospital was established in the year 1983, in a small mode. Since then, it has grown to the current position providing medical services in many areas, using top class facilities.Specialty of this hospital is its service attitude which is well respected in Bangladesh as well as the neighboring countries."
-	},
-	{
-		"id": "5",
-		"name":"Avocato",
-		"status":"Alive",
-		"origin":"Ventrexia",
-		"img": "https://finalspaceapi.com/api/character/avatar/avocato.jpg",
-		"desc": "This is a hospital attached to the “Popular Medical College” in Dhaka. It has a dedicated treatment center as well as a world class lab.As the name suggests, this is a hospital for the masses and is able to handle the quantity with quality care. It focuses on both illness care as well as the wellness aspects, so that the recurring problems are avoided and the patients go away with a healthy"
-	},
-	{
-		"id": "6",
-		"name":"KVN",
-		"status":"Operational",
-		"origin":"Some Factory",
-		"img": "https://finalspaceapi.com/api/character/avatar/kvn.jpg",
-		"desc": "Bangladesh Institute of Research and Rehabilitation in Diabetes, Endocrine and Metabolic Disorders, shortly Birdem is located in the city of Dhaka."
-	},
-	{
-		"id": "7",
-		"name":"Ash Graven",
-		"status":"Unknown",
-		"origin":"Serepentis",
-		"img": "https://finalspaceapi.com/api/character/avatar/ash_graven.png",
-		"desc": "Bangabandhu Sheikh Mujib Medical University, shorting BSMMU has this attached hospital which is located in Dhaka. This 10 storied building provides a casualty department."
-	},
-	{
-		"id": "8",
-		"name":"Fox",
-		"status":"Deceased",
-		"origin":"Tryvuulia",
-		"img": "https://finalspaceapi.com/api/character/avatar/fox.jpg",
-		"desc": "Established in 2005, this hospital focuses on eye care. It has a 10 storied building with many operation theaters and treatment, providing effective solutions to have the potential to disturb regular activities of people of any age."
-	}
+  {
+    "id": "1",
+    "name": "Gary Goodspeed",
+    "origin": "Outer space",
+    "img": "https://finalspaceapi.com/api/character/avatar/gary_goodspeed.png",
+    "desc": "Gary Goodspeed is the son of John Goodspeed, an Infinity Guard captain who died on a mission to close a breach to Final Space when Gary was a child. Shortly after the death of his father, Gary was abandoned by his mother, Sheryl Goodspeed, and forced into a life of crime. Years later, an emotionally stunted adult Gary impersonated an Infinity Guard soldier to impress officer Quinn Ergon, but accidentally destroyed 92 spaceships (plus a Mexican restaurant), and was sentenced to a 5-year prison sentence on the Galaxy One."
+  },
+  {
+    "id": "2",
+    "name": "Mooncake",
+    "status": "Unknown",
+    "origin": "Earth",
+    "img": "https://finalspaceapi.com/api/character/avatar/mooncake.jpg",
+    "desc": "According to his own story in 'The Closer You Get', Tribore was hatched under the three full moons during the feast of the Seven Wonders. At his birth, there was a soothsayer by the name of Tim Belts who said he would actually sprout into a fire elemental with magnificent wings, but this didn't happen since Tim was actually just a hallucinating late-stage alcoholic. Tribore came up with his own name. How much of this story is actually true is debatable however.Five years before the start of the series, Tribore was in the same bar where Gary Goodspeed first met Quinn Ergon. Gary accidentally knocked him out when storming into the bar."
+  },
+  {
+    "id": "3",
+    "name": "Quinn Ergon",
+    "origin": "Outer space",
+    "status": "Alive",
+    "img": "https://finalspaceapi.com/api/character/avatar/quinn_ergon.jpg",
+    "desc": "Quinn and her sister Avery were daughters of commander Ergon and an unnamed Infinity Guard member. They were trained from their childhood by their mother, Commander Ergon for their future career in the Infinity Guard. Quinn and her sister always got into sibling rivalry because Avery's reckless desire to surpass her. Her mother favored her over Avery and tried her best to groom her to take her place as commander in the future even if means using drastic measures to harden her like locking her in the morgues to remind her not to let her comrades or her sister to die in the battlefield and she is responsible for their life."
+  },
+  {
+    "id": "4",
+    "name": "Little Cato",
+    "status": "Alive",
+    "origin": "Ventrexia",
+    "img": "https://finalspaceapi.com/api/character/avatar/little_cato.jpg",
+    "desc": "Little Cato was born to the King and Queen of Ventrexia. While the king and queen were evacuating following an attack, their ship was shot down and destroyed by Avocato, a Ventrexian general, under the orders of the Lord Commander. Little Cato miraculously survived the destruction, and was found by Avocato shortly afterward. Reminded of his previous son, Avocato swore to protect the child and adopted him. That was when Lord Commander arrived, asking what Avocato was doing with the child. Lying to his master, Avocato said that he found the baby, saying that he was his child now. Lord Commander then warned Avocato that his child would soon be the death of him."
+  },
+  {
+    "id": "5",
+    "name": "Avocato",
+    "status": "Alive",
+    "origin": "Ventrexia",
+    "img": "https://finalspaceapi.com/api/character/avatar/avocato.jpg",
+    "desc": "Avocato is a rather serious bounty hunter who can seem cold and stoic at times. He does have a warm side, however, which appears especially when he is around his son and occasionally between him and Gary. Avocato can also be shown as cruel which can be seen in the series when he watches fellow bounty hunter, Terk, die by getting painfully tazed with a casual, and almost annoyed, look. However, he’s also very brave, kind, helpful, and very wise.Avocato also has a very dark past, he used to be the Lord Commander's right-hand who killed billions of people on a planet and killed the King and Queen of Ventrexia under his order."
+  },
+  {
+    "id": "6",
+    "name": "KVN",
+    "status": "Operational",
+    "origin": "Some Factory",
+    "img": "https://finalspaceapi.com/api/character/avatar/kvn.jpg",
+    "desc": "KVN was assigned to Gary Goodspeed as a Deep Space Insanity Avoidance Companion when the latter was sentenced to a five years prison sentence on board the Galaxy One. His job was to keep Gary company and preserve his sanity, since Gary would spend those five years as the only human crew member of the ship. However, KVN's antics immediately made Gary develop a severe dislike for the robot, and this didn't change in the five years they spend together. Gary frequently expresses hostility towards him on a regular basis.For the next five years, he made Gary's time in the Galaxy One a living hell, thanks to his obnoxious personality, fully earning him Gary's hatred. Even H.U.E. admitted in Chapter 7 to have never liked KVN, considering him a jag-off."
+  },
+  {
+    "id": "7",
+    "name": "Ash Graven",
+    "status": "Unknown",
+    "origin": "Serepentis",
+    "img": "https://finalspaceapi.com/api/character/avatar/ash_graven.png",
+    "desc": "Ash is an extremely powerful, young Serepentian woman whose powers first emerged after she was forced to watch the snake god Werthrent devour her sister, Harp Graven, during a sacrificial ceremony. In a fit of despair and rage, Ash's powers were activated in a powerful energy blast, which inadvertently killed her parents. Following the traumatic experience, Ash ran away from her home, where she met her new family, her adoptive brother Fox, and her adoptive father Clarence, before joining the Team Squad soon after. After going into Final Space with the rest of the Team Squad, Ash was slowly corrupted by the malevolent cosmic entity Invictus, and its manipulation tactics caused her to descend into madness and vengeance, resulting in her tragically betraying the Team Squad and aiding Invictus in its ultimate escape."
+  },
+  {
+    "id": "8",
+    "name": "Fox",
+    "status": "Deceased",
+    "origin": "Tryvuulia",
+    "img": "https://finalspaceapi.com/api/character/avatar/fox.jpg",
+    "desc": "Alien Nation is an American science fiction media franchise created by Rockne S. O'Bannon (later known for Farscape), comprising film, television, and other media productions about alien refugees living on Earth. The series began with the 1988 film Alien Nation, which was adapted into a Fox Network television series of the same name in 1989. Fox cancelled the series abruptly after one season, but continued the story in five TV movies. The series also produced other media and merchandising tie-ins, including novels and comics. Aside from the sci-fi angle, the franchise fits into many different genres including drama, police procedural and buddy cop."
+  }
 ]

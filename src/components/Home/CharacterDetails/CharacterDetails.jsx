@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import SlicedCharacters from "../SlicedCharacters/SlicedCharacters";
 import "./CharacterDetails.css";
 
 const CharacterDetails = () => {
@@ -29,7 +30,7 @@ const CharacterDetails = () => {
         <Row>
           <Col lg="5" md="5" xs="12" className="">
             <img
-              style={{ width: "100%", height: "80%" }}
+              style={{ width: "100%", height: "85%" }}
               src={character.img}
               alt="character-image.png"
             />
@@ -38,7 +39,7 @@ const CharacterDetails = () => {
             <h5 className="mt-3 text-uppercase">
               <span className="title-color">Name:</span> {character.name}
             </h5>
-            <p className="mt-4">{character.desc}</p>
+            <p className="mt-4">{character?.desc?.slice(0, 550)},,</p>
             <h6 className="mb-3 mt-5 pt-3  text-uppercase">
               <span className="title-color">Origin</span>: {character.origin}
             </h6>
