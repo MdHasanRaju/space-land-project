@@ -15,7 +15,7 @@ const Footer = () => {
 
   const bgColor = {
     // backgroundColor:'#7c48dc'
-    backgroundColor:'#7c48dc'
+    backgroundColor:'#a223f6'
   }
 
   return (

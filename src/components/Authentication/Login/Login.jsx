@@ -1,8 +1,8 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { faGithub, faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import img from "./../../../assets/images/5.png";
-import { Link, Navigate, useLocation, useNavigate } from "react-router-dom";
+import img from "./../../../assets/images/login4.png";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
@@ -10,8 +10,9 @@ import {
 import auth from "../Firebase/Firebase.init";
 import SocialAccess from "../SocialAccess/SocialAccess";
 import Loading from "../../Shared/Loading/Loading";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -24,6 +25,15 @@ const Login = () => {
 
   const emailRef = useRef("");
   const passwordRef = useRef("");
+  const [isPasswordShown, setIsPasswordShown] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    if (!isPasswordShown) {
+      setIsPasswordShown(true);
+      return;
+    }
+    setIsPasswordShown(false);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -34,12 +44,12 @@ const Login = () => {
 
   const resetPassword = async () => {
     const email = emailRef.current.value;
-   if(email) {
-    await sendPasswordResetEmail(email);
-    toast.success("Sent email");
-   }else {
-     toast.error('Please enter your email address');
-   }
+    if (email) {
+      await sendPasswordResetEmail(email);
+      toast.success("Sent email");
+    } else {
+      toast.error("Please enter your email address");
+    }
   };
 
   if (user) {
@@ -52,20 +62,19 @@ const Login = () => {
       <p className="text-danger text-start mt-1">Error: {error.message}</p>
     );
   }
-  
-  if (loading || sending) {
-      return <Loading/>
 
+  if (loading || sending) {
+    return <Loading />;
   }
 
   const buttonStyle = {
-    width:"100%",
-    backgroundColor:'#a223f6',
-    border:'none',
-    padding:'5px 0',
-    borderRadius:'5px',
-    color:'white'
-  }
+    width: "100%",
+    backgroundColor: "#a223f6",
+    border: "none",
+    padding: "5px 0",
+    borderRadius: "5px",
+    color: "white",
+  };
 
   return (
     <div className="py-5">
@@ -105,28 +114,34 @@ const Login = () => {
                       required
                     />
                   </div>
-                  <div className="form-group last my-3 text-start">
+                  <div className="form-group last my-3 text-start position-relative">
                     <label htmlFor="password">Password</label>
                     <input
                       ref={passwordRef}
-                      type="password"
+                      type={isPasswordShown ? "text" : "password"}
                       className="form-control"
                       id="password"
                       placeholder="password"
                       required
                     />
+                    <FontAwesomeIcon
+                      role="button"
+                      onClick={togglePasswordVisibility}
+                      style={{ top: 35, right: 12 }}
+                      className="position-absolute"
+                      icon={isPasswordShown ? faEyeSlash : faEye }
+                    ></FontAwesomeIcon>
                   </div>
-                  <input
-                    type="submit"
-                    value="Log In"
-                    style={buttonStyle}
-                  />
+                  <input type="submit" value="Log In" style={buttonStyle} />
                   <p className="text-start mt-2 mb-1 d-flex align-items-center">
-                      Forget Password?{" "}
-                      <button onClick={resetPassword} className="btn btn-link text-primary text-decoration-none">
-                        Reset Password
-                      </button>
-                    </p>
+                    Forget Password?{" "}
+                    <button
+                      onClick={resetPassword}
+                      className="btn btn-link text-primary text-decoration-none"
+                    >
+                      Reset Password
+                    </button>
+                  </p>
                   {errorElement && errorElement}
                   {/* {loadingElement && loadingElement} */}
                   <p className="mb-2  text-start ">
@@ -139,7 +154,7 @@ const Login = () => {
                     </Link>
                   </p>
                   <SocialAccess />
-                  <ToastContainer/>
+                  <ToastContainer />
                 </form>
               </div>
             </div>

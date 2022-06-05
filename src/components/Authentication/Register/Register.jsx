@@ -6,10 +6,11 @@ import {
   useCreateUserWithEmailAndPassword,
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
-import img from "./../../../assets/images/3.png";
+import img from "./../../../assets/images/login2.png";
 import auth from "../Firebase/Firebase.init";
 import SocialAccess from "../SocialAccess/SocialAccess";
 import Loading from "../../Shared/Loading/Loading";
+import { faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons";
 
 const Register = () => {
   const [agree, setAgree] = useState(false);
@@ -17,8 +18,18 @@ const Register = () => {
   const location = useLocation();
   let from = location.state?.from?.pathname || "/";
 
+  const [isPasswordShown, setIsPasswordShown] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    if (!isPasswordShown) {
+      setIsPasswordShown(true);
+      return;
+    }
+    setIsPasswordShown(false);
+  };
+
   const [createUserWithEmailAndPassword, user, emailLoading, emailError] =
-    useCreateUserWithEmailAndPassword(auth, {sendEmailVerification: true});
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
   const handleSubmit = async (e) => {
@@ -30,7 +41,7 @@ const Register = () => {
 
     await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
-    console.log(name, email, password, 'profile updated');
+    console.log(name, email, password, "profile updated");
     // navigate('/');
     navigate(from, { replace: true });
   };
@@ -39,25 +50,24 @@ const Register = () => {
   if (emailError) {
     errorElement = <p className="text-danger">Error: {emailError.message}</p>;
   }
-  
+
   // let loadingElement;
   if (emailLoading || updating) {
-    return <Loading/>
+    return <Loading />;
   }
 
   if (user) {
-    console.log('user:', user)
+    console.log("user:", user);
   }
 
   const buttonStyle = {
-    width:"100%",
-    backgroundColor:'#a223f6',
-    border:'none',
-    padding:'5px 0',
-    borderRadius:'5px',
-    color:'white'
-  }
-
+    width: "100%",
+    backgroundColor: "#a223f6",
+    border: "none",
+    padding: "5px 0",
+    borderRadius: "5px",
+    color: "white",
+  };
 
   return (
     <div className="py-5">
@@ -100,9 +110,22 @@ const Register = () => {
                       required
                     />
                   </div>
-                  <div className="form-group last  text-start">
+                  <div className="form-group last  text-start position-relative">
                     <label htmlFor="password">Password</label>
-                    <input className="form-control" id="password" placeholder="password" required />
+                    <input
+                      className="form-control"
+                      type={isPasswordShown ? "text" : "password"}
+                      id="password"
+                      placeholder="password"
+                      required
+                    />
+                    <FontAwesomeIcon
+                      role="button"
+                      onClick={togglePasswordVisibility}
+                      style={{ top: 35, right: 12 }}
+                      className="position-absolute"
+                      icon={isPasswordShown ? faEyeSlash : faEye}
+                    ></FontAwesomeIcon>
                   </div>
 
                   <div className="form-group d-flex justify-content-start align-items-center my-2">
@@ -124,9 +147,18 @@ const Register = () => {
                     disabled={!agree}
                     type="submit"
                     value="Register"
-                    style={!agree ? {width:'100%', backgroundColor:'lightGray', padding:'5px 0',
-                    borderRadius:'5px',border:'none',
-                    color:'black'}: buttonStyle }
+                    style={
+                      !agree
+                        ? {
+                            width: "100%",
+                            backgroundColor: "lightGray",
+                            padding: "5px 0",
+                            borderRadius: "5px",
+                            border: "none",
+                            color: "black",
+                          }
+                        : buttonStyle
+                    }
                   />
                   {errorElement && errorElement}
                   {/* {loadingElement && loadingElement} */}
